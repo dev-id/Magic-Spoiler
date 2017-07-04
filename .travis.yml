@@ -1,7 +1,7 @@
 language: python
 before_install:
   - pip install commentjson
-  - bash preflight.sh # bail on only readme changes, make sure input files are OK before wasting time with prereqs
+  - bash ./preflight.sh # bail on only readme changes, make sure input files are OK before wasting time with prereqs
 install:
   - pip install -r requirements.txt
 script: bash ./deploy.sh
